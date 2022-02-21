@@ -114,13 +114,13 @@ Asena.addCommand({on: 'text', fromMe: false}, (async (message, match) => {
         if(Config.BGMFILTER){
         let banned = jid.find( Jid => Jid === message.jid);
         if(banned !== undefined) return
-        if (!!message.mention && message.mention[0] == '919645628728@s.whatsapp.net') {
+        if (!!message.mention && message.mention[0] == '9183010 65311@s.whatsapp.net') {
 await message.client.sendMessage(message.jid, fs.readFileSync('./sourav/music.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
         if (!!message.mention && message.mention[0] == Config.AFNN) {
 await message.client.sendMessage(message.jid, fs.readFileSync('./sourav/music.mp3'), MessageType.audio, { mimetype: Mimetype.mp4Audio, quoted : message.data, ptt: true})
         }
-const array = ['Ayin','Ayinu','Bgm','Bot','Bye','Da','Good night','Hello','Hi','Neymar','Pm','Sed','alive','assist','ban','bgm','bot','converting','fake','fork','fuck','music','myre','njan','number','oombi','para','poda','raganork','remove','reply','sed','subscribe','umma','xxxtentation']
+const array = ['Ayin','Ayinu','Bgm','Bot','Bye','Da','Good night','Hello','Hi','Neymar','.brainly','true','@917356706325','@918281431979','@918301065311','@917306362776','ðŸ¥³','ðŸ˜¹','am.fx','ayinu','birthday','bot engana','bot','call','chill','chunk','da','engane','enganund','enjoy','enthra','enthra','exam','happy','hi','hlo','i like you','ippo engane irikane','kazhiju','kili','kundan','line','mrng','muth','myre','myre','ne eatha','ombi','paisa','parayatte','poda','poli','pooda','sad','sorry','suni','vavachi poli','vavachi','vazhe','tome','umbi','varilla','tentaction','tamasha','tom','pm','Sed','alive','assist','ban','bgm','bot','converting','fake','fork','fuck','music','myre','njan','number','oombi','para','poda','raganork','remove','reply','sed','subscribe','umma','xxxtentation']
 array.map( async (a) => {
 let pattern = new RegExp(`\\b${a}\\b`, 'g');
 if(pattern.test(message.message)){
